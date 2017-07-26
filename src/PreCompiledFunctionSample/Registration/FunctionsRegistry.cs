@@ -29,6 +29,8 @@ namespace PreCompiledFunctionSample.Registration
             For(typeof(DocumentDBRepository<>)).Use(typeof(DocumentDBRepository<>))
                 .Ctor<string>("databaseId").Is(databaseId);
 
+            For<DocumentClient>().Use(c => c.GetInstance<DocumentClientProvider>().GetClient()).Singleton();
+
             //TODO: map all services below
             For<IFunctionService>().Use<FunctionService>();
         }

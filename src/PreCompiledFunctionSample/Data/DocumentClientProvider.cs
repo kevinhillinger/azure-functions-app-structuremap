@@ -31,7 +31,7 @@ namespace PreCompiledFunctionSample.Data
             AuthKey = authKey;
         }
 
-        public DocumentClient Create()
+        public DocumentClient GetClient()
         {
             return internalProvider.Value;
         }

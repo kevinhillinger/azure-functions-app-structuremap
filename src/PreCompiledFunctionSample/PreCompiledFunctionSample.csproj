@@ -57,10 +57,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DocumentClientProvider.cs" />
+    <Compile Include="Model\FunctionModel.cs" />
     <Compile Include="MyFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Data\DocumentDBRepository.cs" />
     <Compile Include="Registration\FunctionsRegistry.cs" />
+    <Compile Include="Services\FunctionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
